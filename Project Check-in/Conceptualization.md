@@ -1,6 +1,6 @@
 ## Musical Geoboard
 
-My music-related software project will be a [geoboard](https://apps.mathlearningcenter.org) with which the user can draw shapes or overlay images that correspond to different audio parameters and generate audio and MIDI data.
+My music-related software project will be a [geoboard](https://apps.mathlearningcenter.org/geoboard/) with which the user can draw shapes or overlay images that correspond to different audio parameters and generate audio and MIDI data.
 
 ---
 
