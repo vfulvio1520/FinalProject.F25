@@ -2,6 +2,8 @@
 
 My music-related software project will be a geoboard with which the user can draw shapes or overlay images that correspond to different audio parameters and generate audio and MIDI data.
 
+---
+
 ### Objectives and scope
 
 - Create a geoboard with a grid on which shapes can be drawn and images can be overlayed.
