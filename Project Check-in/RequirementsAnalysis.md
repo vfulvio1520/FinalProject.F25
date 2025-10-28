@@ -16,6 +16,28 @@ My music-related software project will be a [geoboard](https://apps.mathlearning
 
 ---
 
-### System requirements
+### System Requirements
 
--
+- Functional Requirements
+
+  - Interactive geoboard for drawing and manipulating shapes
+  - Real-time audio generation/synthesis, mapped to shape dimensions and coordinates
+  - Integrated sound database with control over audio parameters
+  - MIDI note and control generated from geometric data
+  - Export audio and MIDI data
+
+- Technical Requirements
+  - SVG rendering for shapes
+  - React + Tone.js for synthesis
+  - WebMIDI API for MIDI integration
+  - Node.js for file export and sound library
+  - Local storage
+
+---
+
+### Constraints and Limitations
+
+- Browser limits on audio processing and sample rate
+- JavaScript timing + latency constraints
+- Polyphony + parameter mapping constraints
+- Complex geometric-to-audio mapping
