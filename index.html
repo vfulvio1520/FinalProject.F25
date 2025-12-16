@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        font-family: sans-serif;
+        margin: 0;
+        padding: 20px;
+        background: #7749a5;
+      }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      canvas {
+        border: 2px solid #000000;
+        margin-bottom: 20px;
+      }
+
+      .ctlGroup {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 400px;
+        background: #0ed35d51;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .slider {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .slider input[type="range"] {
+        flex: 1;
+      }
+
+      .slider label {
+        width: 50px;
+        text-align: right;
+      }
+    </style>
+
+    <meta charset="UTF-8" />
+    <title>Geoboard Synthesizer</title>
+
+    <!-- p5.js -->
+    <script src="https://cdn.jsdelivr.net/npm/p5@2.0.5/lib/p5.min.js"></script>
+
+    <!-- Tone.js -->
+    <script src="https://cdn.jsdelivr.net/npm/tone@14.8.42/build/Tone.js"></script>
+
+    <!-- Tonal.js -->
+    <script src="https://cdn.jsdelivr.net/npm/tonal/browser/tonal.min.js"></script>
+
+    <script src="grid.js"></script>
+    <script src="map.js"></script>
+  </head>
+  <body>
+    <h1>Geoboard Synthesizer</h1>
+    <div class="ctlGroup" id="adsrArea">
+      <div class="slider">
+        <label for="attTime">Attack</label>
+        <input
+          type="range"
+          id="attTime"
+          min="0"
+          max="1"
+          value="0.01"
+          step="0.001"
+        />
+        <label id="attLabel">10 ms</label>
+      </div>
+      <div class="slider">
+        <label for="decTime">Decay</label>
+        <input
+          type="range"
+          id="decTime"
+          min="0"
+          max="1"
+          value="0.05"
+          step="0.001"
+        />
+        <label id="decLabel">50 ms</label>
+      </div>
+      <div class="slider">
+        <label for="susAmp">Sustain</label>
+        <input
+          type="range"
+          id="susAmp"
+          min="0"
+          max="1"
+          value="0.25"
+          step="0.01"
+        />
+        <label id="susLabel">0.25</label>
+      </div>
+      <div class="slider">
+        <label for="relTime">Release</label>
+        <input
+          type="range"
+          id="relTime"
+          min="0"
+          max="1"
+          value="0.04"
+          step="0.001"
+        />
+        <label id="relLabel">40 ms</label>
+      </div>
+    </div>
+
+    <script src="synth.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
